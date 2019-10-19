@@ -31,7 +31,7 @@
 		FAC7C8272122CE1D000262E7 /* NSURLRequest+SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7C80F2122CE1D000262E7 /* NSURLRequest+SRWebSocket.m */; };
 		FAC7C8282122CE1D000262E7 /* SRSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7C8142122CE1D000262E7 /* SRSecurityPolicy.m */; };
 		FAC7C8292122CE1D000262E7 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7C8162122CE1D000262E7 /* SRWebSocket.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations -Wno-implicit-retain-self"; }; };
-		FACCC867211AC281008C87BD /* MyStreamDeckPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = FACCC865211AC281008C87BD /* MyStreamDeckPlugin.m */; };
+		FACCC867211AC281008C87BD /* AirplaneModeStreamDeckPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = FACCC865211AC281008C87BD /* AirplaneModeStreamDeckPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,7 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FA0F7B772105CBC30028CF34 /* AppleMail */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AppleMail; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0F7B772105CBC30028CF34 /* AirplaneMode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AirplaneMode; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA29E46E215E7D2300C9F60C /* ESDConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDConnectionManager.m; sourceTree = "<group>"; };
 		FA29E46F215E7D2300C9F60C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA29E470215E7D2300C9F60C /* ESDConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDConnectionManager.h; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 		FAC7C8142122CE1D000262E7 /* SRSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSecurityPolicy.m; sourceTree = "<group>"; };
 		FAC7C8152122CE1D000262E7 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
 		FAC7C8162122CE1D000262E7 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
-		FACCC865211AC281008C87BD /* MyStreamDeckPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStreamDeckPlugin.m; sourceTree = "<group>"; };
-		FACCC866211AC281008C87BD /* MyStreamDeckPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStreamDeckPlugin.h; sourceTree = "<group>"; };
+		FACCC865211AC281008C87BD /* AirplaneModeStreamDeckPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirplaneModeStreamDeckPlugin.m; sourceTree = "<group>"; };
+		FACCC866211AC281008C87BD /* AirplaneModeStreamDeckPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirplaneModeStreamDeckPlugin.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +119,8 @@
 		FA0F7B6E2105CBC30028CF34 = {
 			isa = PBXGroup;
 			children = (
-				FACCC866211AC281008C87BD /* MyStreamDeckPlugin.h */,
-				FACCC865211AC281008C87BD /* MyStreamDeckPlugin.m */,
+				FACCC866211AC281008C87BD /* AirplaneModeStreamDeckPlugin.h */,
+				FACCC865211AC281008C87BD /* AirplaneModeStreamDeckPlugin.m */,
 				FA29E46D215E7D2300C9F60C /* Common */,
 				FAC7C7E42122CE1D000262E7 /* SocketRocket */,
 				FA0F7B782105CBC30028CF34 /* Products */,
@@ -131,7 +131,7 @@
 		FA0F7B782105CBC30028CF34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA0F7B772105CBC30028CF34 /* AppleMail */,
+				FA0F7B772105CBC30028CF34 /* AirplaneMode */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,9 +276,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA0F7B762105CBC30028CF34 /* AppleMail */ = {
+		FA0F7B762105CBC30028CF34 /* AirplaneMode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA0F7B7E2105CBC30028CF34 /* Build configuration list for PBXNativeTarget "AppleMail" */;
+			buildConfigurationList = FA0F7B7E2105CBC30028CF34 /* Build configuration list for PBXNativeTarget "AirplaneMode" */;
 			buildPhases = (
 				FA0F7B732105CBC30028CF34 /* Sources */,
 				FA0F7B742105CBC30028CF34 /* Frameworks */,
@@ -288,9 +288,9 @@
 			);
 			dependencies = (
 			);
-			name = AppleMail;
+			name = AirplaneMode;
 			productName = ObjcPlugin;
-			productReference = FA0F7B772105CBC30028CF34 /* AppleMail */;
+			productReference = FA0F7B772105CBC30028CF34 /* AirplaneMode */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -300,14 +300,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "Elgato Systems";
+				ORGANIZATIONNAME = "Jarno Le Conté";
 				TargetAttributes = {
 					FA0F7B762105CBC30028CF34 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
-			buildConfigurationList = FA0F7B722105CBC30028CF34 /* Build configuration list for PBXProject "AppleMail" */;
+			buildConfigurationList = FA0F7B722105CBC30028CF34 /* Build configuration list for PBXProject "AirplaneMode" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -319,7 +319,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA0F7B762105CBC30028CF34 /* AppleMail */,
+				FA0F7B762105CBC30028CF34 /* AirplaneMode */,
 			);
 		};
 /* End PBXProject section */
@@ -336,7 +336,7 @@
 				FAC7C8282122CE1D000262E7 /* SRSecurityPolicy.m in Sources */,
 				FAC7C8262122CE1D000262E7 /* NSRunLoop+SRWebSocket.m in Sources */,
 				FAC7C8182122CE1D000262E7 /* SRIOConsumer.m in Sources */,
-				FACCC867211AC281008C87BD /* MyStreamDeckPlugin.m in Sources */,
+				FACCC867211AC281008C87BD /* AirplaneModeStreamDeckPlugin.m in Sources */,
 				FAC7C8212122CE1D000262E7 /* SRLog.m in Sources */,
 				FAC7C8172122CE1D000262E7 /* SRDelegateController.m in Sources */,
 				FAC7C8202122CE1D000262E7 /* SRHTTPConnectMessage.m in Sources */,
@@ -474,25 +474,31 @@
 		FA0F7B7F2105CBC30028CF34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elgato.applemail;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hckr.streamdeck.airplanemode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		FA0F7B802105CBC30028CF34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elgato.applemail;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hckr.streamdeck.airplanemode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA0F7B722105CBC30028CF34 /* Build configuration list for PBXProject "AppleMail" */ = {
+		FA0F7B722105CBC30028CF34 /* Build configuration list for PBXProject "AirplaneMode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA0F7B7C2105CBC30028CF34 /* Debug */,
@@ -501,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA0F7B7E2105CBC30028CF34 /* Build configuration list for PBXNativeTarget "AppleMail" */ = {
+		FA0F7B7E2105CBC30028CF34 /* Build configuration list for PBXNativeTarget "AirplaneMode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA0F7B7F2105CBC30028CF34 /* Debug */,

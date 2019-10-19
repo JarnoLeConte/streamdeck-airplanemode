@@ -1,25 +1,27 @@
+# AirplaneMode
 
-`AppleMail` is a sample plugin demonstrating the [Stream Deck SDK](https://developer.elgato.com/documentation/stream-deck/).
+This `AirplaneMode` plug-in for [Stream Deck](https://www.elgato.com/gaming/stream-deck) makes it possible to disable your internet connection by a single press on a button on your Stream Deck.
+Implementation is based on the example plugin `AppleMail` provided by [Elgato](https://github.com/elgatosf/streamdeck-applemail).
 
 
 # Description
 
-`AppleMail` is a plugin that displays the number of unread emails in Apple Mail. Pressing on the key will launch Apple Mail.
+`AirplaneMode` makes it possible to block all internet activity. Pressing on the key will disconnect your internet. Pressing another time will bring you online again.
 
 
 # Features
 
+- Detect and switch your network location
 - code written in Objective-C
+- run AppleScript
 - macOS only
-- localized
-- detects if Apple Mail is running
 
 ![](screenshot.png)
 
 
 # Installation
 
-In the Release folder, you can find the file `com.elgato.applemail.streamDeckPlugin`. If you double-click this file on your machine, Stream Deck will install the plugin.
+In the Release folder, you can find the file `me.hckr.airplanemode.streamDeckPlugin`. If you double-click this file on your machine, Stream Deck will install the plugin.
 
 
 # Source code

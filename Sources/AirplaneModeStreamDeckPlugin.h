@@ -1,12 +1,12 @@
 //==============================================================================
 /**
-@file       MyStreamDeckPlugin.h
+@file       AirplaneModeStreamDeckPlugin.h
 
-@brief      A Stream Deck plugin displaying the number of unread emails in Apple's Mail
+@brief      A Stream Deck plugin to enable Airplane Mode on your Mac
 
-@copyright  (c) 2018, Corsair Memory, Inc.
-			This source code is licensed under the MIT-style license found in the LICENSE file.
-
+@copyright  Original work (c) 2018, Corsair Memory, Inc.
+            Modified work (c) 2019, Jarno Le Conté
+            This source code is licensed under the MIT-style license found in the LICENSE file.
 **/
 //==============================================================================
 
@@ -18,7 +18,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MyStreamDeckPlugin : NSObject <ESDEventsProtocol>
+@interface AirplaneModeStreamDeckPlugin : NSObject <ESDEventsProtocol>
 
 @property (weak) ESDConnectionManager *connectionManager;
 

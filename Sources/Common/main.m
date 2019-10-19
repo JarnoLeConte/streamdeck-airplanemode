@@ -4,7 +4,8 @@
 
 @brief      Parse the arg parameters and start the plugin
 
-@copyright  (c) 2018, Corsair Memory, Inc.
+@copyright  Original work (c) 2018, Corsair Memory, Inc.
+            Modified work (c) 2019, Jarno Le Conté
 			This source code is licensed under the MIT-style license found in the LICENSE file.
 
 **/
@@ -14,7 +15,7 @@
 #import "ESDConnectionManager.h"
 #import "ESDSDKDefines.h"
 
-#import "MyStreamDeckPlugin.h"
+#import "AirplaneModeStreamDeckPlugin.h"
 
 int main(int argc, const char * argv[])
 {
@@ -72,8 +73,8 @@ int main(int argc, const char * argv[])
 			return 1;
 		}
 
-		// Create MyStreamDeckPlugin
-		MyStreamDeckPlugin *eventsManager = [[MyStreamDeckPlugin alloc] init];
+		// Create AirplaneModeStreamDeckPlugin
+		AirplaneModeStreamDeckPlugin *eventsManager = [[AirplaneModeStreamDeckPlugin alloc] init];
 
 		// Create the connection manager
 		ESDConnectionManager * __unused connectionManager = [[ESDConnectionManager alloc] initWithPort:port andPluginUUID:pluginUUID andRegisterEvent:registerEvent andInfo:info andDelegate:eventsManager];

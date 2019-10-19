@@ -1,0 +1,37 @@
+{
+  "Actions": [
+    {
+      "Icon": "images/AirplaneModeIcon",
+      "Name": "Airplane mode",
+      "States": [
+        {
+          "Image": "images/AirplaneModeDisabledIcon"
+        },
+        {
+          "Image": "images/AirplaneModeEnabledIcon"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "All internet activity is blocked while airplane mode is enabled.",
+      "UUID": "me.hckr.airplanemode.action"
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "Jarno Le Conté",
+  "CodePath": "AirplaneMode",
+  "Description": "Temporarily disable your internet connection",
+  "Name": "Airplane mode",
+  "Icon": "images/PluginIcon",
+  "URL": "https://github.com/JarnoLeConte/streamdeck-airplanemode",
+  "Version": "1.0",
+  "OS": [
+    {
+        "Platform": "mac",
+        "MinimumVersion" : "10.11"
+    }
+  ],
+  "Software":
+    {
+        "MinimumVersion" : "4.3"
+    }
+}
